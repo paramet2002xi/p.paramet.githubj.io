@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ตั้งค่าพื้นฐานของ HTML และโหลดฟอนต์ -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paramet Kumpapun Portfolio</title>
+  <!-- ฟอนต์ Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+
+    /* ตั้งค่าพื้นฐานของ body */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      height: 100vh;
+    }
+
+    /* ฝั่งซ้าย: ข้อมูลส่วนตัว */
+    .left-section {
+      flex: 1;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      background-color: white;
+    }
+
+    /* รูปโปรไฟล์ */
+    .left-section img {
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    /* ข้อความชื่อ */
+    h1 {
+      margin: 0;
+      font-size: 36px;
+      font-weight: 400; /* ความหนาฟอนต์แบบ regular */
+    }
+
+    /* ข้อความตำแหน่ง UX/UI Designer */
+    h2 {
+      font-size: 80px;
+      margin: 10px 0 30px;
+    }
+
+    /* กลุ่มปุ่มเมนู */
+    .button-group {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    /* ปุ่มเมนู Portfolio / Resume / Transcript */
+    .button-group button {
+      padding: 15px 40px;
+      background-color: black;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    /* ปุ่มเมนู Portfolio / Resume / Transcript */
+    .btn {
+      padding: 15px 40px;
+      background-color: black;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 18px;
+      cursor: pointer;
+      text-decoration: none; /* เอาเส้นใต้ลิงก์ออก */
+      display: inline-block;
+      text-align: center;
+    }
+
+    /* ไอคอนโซเชียลมีเดีย */
+    .social-icons {
+      display: flex;
+      gap: 15px;
+      font-size: 0px;
+    }
+
+    /* ปรับขนาดไอคอนโซเชียลมีเดีย */
+    .social-icons img {
+    width: 40px;
+    height: 40px;
+    }
+
+    .right-section {
+  flex: 1;
+  position: relative;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.profile-right {
+  max-width: 140%;
+  max-height: 140%;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+  </style>
+</head>
+<body>
+  <!-- ฝั่งซ้าย: ข้อมูลส่วนตัวและปุ่ม -->
+  <div class="left-section">
+    <!-- รูปโปรไฟล์ -->
+    <img src="img/PF.jpg">
+    <!-- ชื่อและตำแหน่ง -->
+    <h1>Hi I am Paramet Kumpapun (Pun)</h1>
+    <h2>UX / UI Designer</h2>
+    <!-- ปุ่มลิงก์ Portfolio / Resume / Transcript -->
+    <div class="button-group">
+      <a href="pdf/Portfolio - Paramet.pdf" class="btn">Portfolio</a>
+      <a href="pdf/Resume-Paramet.pdf" class="btn" target="_blank">Resume</a>
+      <a href="transcript.pdf" class="btn" target="_blank">Transcript</a>
+    </div>
+    <!-- ลิงก์โซเชียล -->
+    <div class="social-icons">
+      <a href="https://www.facebook.com/pan.paramet.11"><img src="img/Facebook_icon.svg" alt="Facebook"></a>
+      <a href="https://www.instagram.com/_pxrxmxt/"><img src="img/Instagram_icon.svg" alt="Instagram"></a>
+    </div>
+  </div>
+
+  <!-- ฝั่งขวา: รูปภาพ -->
+  <div class="right-section">
+    <img src="img/RI.jpg" alt="Photo of me" class="profile-right">
+  </div>
+</body>
+</html>
